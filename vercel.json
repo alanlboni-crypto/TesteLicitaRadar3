@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    { "source": "/api/monitor/save",   "destination": "/api/monitor/save" },
+    { "source": "/api/monitor/list",   "destination": "/api/monitor/list" },
+    { "source": "/api/monitor/delete", "destination": "/api/monitor/delete" },
+    { "source": "/api/monitor/cron",   "destination": "/api/monitor/cron" },
+    { "source": "/api/search",         "destination": "/api/search" },
+    { "source": "/api/pncp",           "destination": "/api/pncp" }
+  ],
+  "crons": [
+    {
+      "path": "/api/monitor/cron",
+      "schedule": "0 8 * * *"
+    }
+  ]
+}
